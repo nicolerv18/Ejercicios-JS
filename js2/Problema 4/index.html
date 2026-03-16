@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tienda de Vinilos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Tienda de Vinilos</h1>
+<h2 class="title">Taylor Swift</h2>
+
+<div class="productos">
+
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/en/f/f8/Taylor_Swift_-_Folklore.png">
+<h3>Folklore Vinyl</h3>
+<p>Disco cd</p>
+<p>$30</p>
+<button onclick="agregarProducto(
+'Folklore Vinyl',30,'https://upload.wikimedia.org/wikipedia/en/f/f8/Taylor_Swift_-_Folklore.png')">Agregar</button>
+</div>
+
+<div class="card">
+<img src="img/evemeore.webp" alt="">
+<h3>Evermore Vinyl</h3>
+<p>Edición Especial</p>
+<p>$30</p>
+
+<button onclick="agregarProducto(
+'Evermore Vinyl',30,'img/evemeore.webp')">Agregar</button>
+</div>
+
+<div class="card">
+<img src="img/marron.jpg" alt="">
+<h3>Midnights Vinyl</h3>
+<p>Edición Especial</p>
+<p>$35</p>
+<button onclick="agregarProducto('Midnights Vinyl',35,'img/marron.jpg')">Agregar</button>
+</div>
+
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/en/f/f6/Taylor_Swift_-_1989.png">
+<h3>1989 Vinyl</h3>
+<p>Original's version</p>
+<p>$32</p>
+<button onclick="agregarProducto('1989 Vinyl',32,'https://upload.wikimedia.org/wikipedia/en/f/f6/Taylor_Swift_-_1989.png')">Agregar</button>
+</div>
+
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/en/f/f2/Taylor_Swift_-_Reputation.png">
+<h3>Reputation Vinyl</h3>
+<p>Taylor's version</p>
+<p>$28</p>
+<button onclick="agregarProducto('Reputation Vinyl',28,'https://upload.wikimedia.org/wikipedia/en/f/f2/Taylor_Swift_-_Reputation.png')">Agregar</button>
+</div>
+
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/en/c/cd/Taylor_Swift_-_Lover.png">
+<h3>Lover Vinyl</h3>
+<p>Edición Especial</p>
+<p>$31</p>
+<button onclick="agregarProducto('Lover Vinyl',31,'https://upload.wikimedia.org/wikipedia/en/c/cd/Taylor_Swift_-_Lover.png')">Agregar</button>
+</div>
+
+</div>
+
+<hr>
+
+<h2>Carrito 🛒 (<span id="contador">0</span>)</h2>
+<div id="lista" class="carrito"></div>
+
+<button onclick="verTotal()">Ver Total</button>
+<button onclick="vaciarCarrito()">Vaciar</button>
+
+<p id="resultado"></p>
+
+<script src="carrito_compras.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Tecnologia</title>
+</head>
+<body>
+    <h1>Tienda de tecnología</h1>
+
+<label for="nombre">Nombre del producto:</label>
+<input type="text" id="nombre" placeholder="Nombre del producto"><br><br>
+
+<label for="precio">Precio del producto:</label>
+<input type="number" id="precio" placeholder="Precio del producto"><br><br>
+
+<label for="cantidad">Cantidad:</label>
+<input type="number" id="cantidad" placeholder="Cantidad del producto"><br><br>
+
+<button onclick="ingresarProducto()">Agregar producto</button>
+<button onclick="consultarInformacion()">Consultar información</button>
+<button onclick="calcularTotal()">Calcular total</button>
+
+<h3 id="resultado"></h3>
+
+<script src="script.js"></script>
+
+</body>
+</html>

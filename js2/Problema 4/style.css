@@ -1,0 +1,89 @@
+body{
+font-family: Eloquent JF Pro Regular (scaled), Helvetica, Arial, sans-serif;
+text-align:center;
+background:#f5f5f5;
+}
+.title{
+font-family: MrsSaintDelafield Pro Regular (scaled), Helvetica, Arial, sans-serif;
+text-align:center;
+background:#7963c3;
+}
+
+.productos{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:white;
+border-radius:10px;
+padding:15px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.card img{
+width:150px;
+height:150px;
+object-fit:cover;
+}
+
+button{
+background:#7813cb;
+border:none;
+padding:10px;
+border-radius:5px;
+cursor:pointer;
+color:white;
+}
+
+button:hover{
+background:#594c6a;
+}
+
+
+#lista{
+margin:30px auto;
+width:70%;
+}
+
+#lista table{
+width:100%;
+border-collapse:collapse;
+background:white;
+box-shadow:0 4px 10px#3f3945;
+border-radius:10px;
+overflow:hidden;
+}
+
+#lista th{
+background:#594c6a;
+color:white;
+padding:12px;
+font-size:16px;
+}
+
+#lista td{
+padding:12px;
+text-align:center;
+border-bottom:1px solid #eee;
+}
+
+#lista tr:hover{
+background:#f5f5f5;
+}
+
+#lista img{
+width:60px;
+height:60px;
+object-fit:cover;
+border-radius:5px;
+}
+
+#resultado{
+font-size:20px;
+font-weight:bold;
+margin-top:15px;
+}
+
